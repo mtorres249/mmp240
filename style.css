@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding: 0;
+    border: none;
+    font-family: "arial";
+}
+.container{
+    max-width: 1140px;
+    overflow:auto;
+    padding: 316x;
+    padding-top: 0;
+    margin: 8px;
+    position: relative; /* acts as a ref pont to positioned elements*/
+    font-family: "arial";
+    background-color: #303f9f; 
+}
+.menu-button{
+    float: right;
+    position: absolute;
+    right: 15px;
+    top: .5em;
+}
+header{
+    width:100%;
+    float:left;
+    background-color: #ef5350;
+}
+body{
+    background-color: #303f9f;
+    border-top: solid, 
+}
+.link-color{
+    color: #666ad1;
+    text-decoration: underline;
+}
+.red-color{
+    color: #f27471;
+    font-weight: bold;
+    }
+.logo{
+    width:60%;
+    float: left;
+    left:0;
+}
+.fluid-image{
+    width:100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+nav {
+    float: right;
+    width: 30%;
+   }
+.main-menu ul{
+    /*display: none;*/
+    list-style-type: none;
+    border: solid 1px #ccc;
+    background-color: white;
+    position: absolute;
+    right: 0;
+}
+.main-menu li{
+    margin-right: 2em;
+    height: 36px;
+    padding-top: 6px;
+    margin bottom: 6px;
+    border-bottom: solid 1px #ccc;
+    background-color: white;
+} 
+.main-menu li: last-child{ /*targets last list item*/
+    border-bottom: none;
+    margin-bottom: 0;
+}
+a{
+   color: #666ad1; 
+}
+a:hover{
+    color: #ef5350;
+}
+a:active{
+    
+}
+p{
+    margin-top: .5em;
+    margin-bottom: .5em;
+    margin-left: .2em;
+}
+h1{
+    top:0;
+    width: 70%;
+    font-size: 32px;
+}
+h2{
+    font-weight: 200;
+    color: #f27471;
+}
+h3{
+    font-weight: bold;
+    color: #ef5350;
+    padding-bottom: 1em;
+}
+h4{
+    font-weight: 100;
+    color: #f27471;
+}
+h5{
+    font-weight: 100;
+    color: #f27471;
+    padding-bottom: .5em;
+}
+.text{
+    border: solid 2px #b61827;
+    background-color: white;
+}
+.page-footer{
+    padding-top: .5em;
+    color: #ef5350;
+}
+
+
+
+/* ***** Desktop Styles ***** */
+
+@media(min-width: 768px){
+  
+    .main-menu ul{
+    display: block;
+    border: none;
+    position: static;
+    width: 100%;
+    }
+    
+.main-menu li{
+    height: 36px;
+    padding-top: 0;
+    margin bottom: 0;
+    border-bottom: none;
+    display: inline;
+    margin-left: 5em;
+    }
+    
+    nav {
+    width: 100%;
+   }
+
+    .menu-button{
+        display: none;
+}
+
+    
+    
+    
+}
